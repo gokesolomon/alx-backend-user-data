@@ -60,8 +60,8 @@ class Auth:
 
     def valid_login(self, email: str, password: str) -> bool:
         """
-        It Validate a user's login credentials and return True if they are correct
-        or False if they are not
+        It Validate a user's login credentials and return True if they are
+        correct or False if they are not
         Args:
             email (str): user's email address
             password (str): user's password
@@ -95,8 +95,8 @@ class Auth:
 
     def get_user_from_session_id(self, session_id: str) -> Union[None, U]:
         """
-        It Takes a session_id and returns the corresponding user, if one exists,
-        else returns None
+        It Takes a session_id and returns the corresponding user, if one
+        exists, else returns None
         Args:
             session_id (str): session id for user
         Return:
@@ -129,7 +129,8 @@ class Auth:
 
     def get_reset_password_token(self, email: str) -> str:
         """
-        It Generates a reset_token uuid for a user identified by the given email
+        It Generates a reset_token uuid for a user identified by the given
+        email
         Args:
             email (str): user's email address
         Return:
